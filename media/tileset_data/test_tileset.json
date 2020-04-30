@@ -1,0 +1,72 @@
+{
+    "tiles": {
+        "floor_tile": {
+            "images": ["plain_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "red_tile": {
+            "images": ["red_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "blue_tile": {
+            "images": ["blue_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "BLANK": {
+            "images": ["blank_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "WALL_TILE": {
+            "images": ["stone_wall.png"],
+            "animated_speed": 0,
+            "format": "CONNECTABLE"
+        },
+        "STONE_FLOOR": {
+            "images": ["outside_stone_floor.png"],
+            "animated_speed": 0,
+            "format": "CONNECTABLE",
+            "allowed_connections": ["WALL_TILE"]
+        },
+        "SNOW_FLOOR": {
+            "images": ["snow_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "STONE_TILE": {
+            "images": ["stone_tile.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "STONE_TILES": {
+            "images": ["stone_tiles.png"],
+            "animated_speed": 0,
+            "format": "SIMPLE"
+        },
+        "NEON_TILE": {
+            "images": ["neon_pink_floor_1.png", "neon_pink_floor_2.png", "neon_pink_floor_3.png", "neon_pink_floor_4.png", "neon_pink_floor_5.png"],
+            "animated_speed": 10,
+            "format": "SIMPLE"
+        }
+    },
+    "decorators":{
+        "TREE": {
+            "images": ["spruce_tree.png"],
+            "animated_speed": 0,
+            "width": 120,
+            "height": 120,
+            "center_decoration": true,
+            "collision_objects": [
+                {
+                    "format": "CIRCLE",
+                    "x_pos": "0.5",
+                    "y_pos": 0.5,
+                    "radius": 0.5
+                }
+            ]
+        }
+    }
+}
